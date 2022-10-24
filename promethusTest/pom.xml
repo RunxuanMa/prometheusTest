@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>promethusTest</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.3.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <dependency>
+        <groupId>io.micrometer</groupId>
+        <artifactId>micrometer-core</artifactId>
+    </dependency>
+
+    <dependency>
+        <groupId>io.micrometer</groupId>
+        <artifactId>micrometer-registry-prometheus</artifactId>
+    </dependency>
+    <!-- 引入Spring boot的监控机制-->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>io.prometheus</groupId>
+        <artifactId>simpleclient_spring_boot</artifactId>
+        <version>0.4.0</version>
+    </dependency>
+    <!-- prometheus -->
+    <dependency>
+        <groupId>io.prometheus</groupId>
+        <artifactId>simpleclient</artifactId>
+        <version>0.3.0</version>
+    </dependency>
+    <dependency>
+        <groupId>io.prometheus</groupId>
+        <artifactId>simpleclient_hotspot</artifactId>
+        <version>0.3.0</version>
+    </dependency>
+    <dependency>
+        <groupId>io.prometheus</groupId>
+        <artifactId>simpleclient_pushgateway</artifactId>
+        <version>0.9.0</version>
+    </dependency>
+    <dependency>
+        <groupId>io.prometheus</groupId>
+        <artifactId>simpleclient_servlet</artifactId>
+        <version>0.3.0</version>
+    </dependency>
+
+</dependencies>
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+</project>

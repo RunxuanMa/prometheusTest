@@ -1,0 +1,13 @@
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: /    # 访问路径中没有actuator 直接是http://localhost:8080/Prometheus
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 8080
